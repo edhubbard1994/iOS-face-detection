@@ -7,7 +7,12 @@
 //
 
 #import "Vision.h"
+#import <opencv2/highgui/cap_ios.h>
 
 @implementation Vision
+
+-(void) evaluateImage: *UIImage image {
+    
+}
 
 @end

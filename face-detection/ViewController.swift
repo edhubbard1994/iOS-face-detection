@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var imageView: UIImageView?
     var nextButton: UIButton?
     var previousButton: UIButton?
+    var vision: Vision?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +25,15 @@ class ViewController: UIViewController {
     func setupNextButton() -> UIButton {
         let btn = UIButton(frame:
             CGRect(x: self.view.frame.width / 2,
-                   y: 4 * self.view.frame.height / 5,
+                   y: 5 * self.view.frame.height / 6,
                 width: self.view.frame.width / 2,
-                height: 20)
+                height: 50)
         )
         btn.setTitle("Next", for: .normal)
-        btn.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
-        self.view.bringSubviewToFront(btn)
+        btn.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        btn.addTarget(self, action: #selector(self.onNextPressed), for: .touchUpInside)
         self.view.addSubview(btn)
+        self.view.bringSubviewToFront(btn)
         return btn
     }
     
@@ -42,7 +44,12 @@ class ViewController: UIViewController {
     }
     
     private func getImage() -> UIImage? {
+        
         return nil
+    }
+    
+    @objc func onNextPressed() -> Void {
+        print("next pressed")
     }
 
 
