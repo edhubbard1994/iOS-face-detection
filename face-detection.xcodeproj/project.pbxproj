@@ -19,6 +19,7 @@
 		D307FF0324D904B0000017C0 /* face_detectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307FF0224D904B0000017C0 /* face_detectionTests.swift */; };
 		D307FF0E24D904B1000017C0 /* face_detectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307FF0D24D904B1000017C0 /* face_detectionUITests.swift */; };
 		D307FF1E24D90799000017C0 /* Vision.mm in Sources */ = {isa = PBXBuildFile; fileRef = D307FF1D24D90799000017C0 /* Vision.mm */; };
+		D307FF2124DF20A5000017C0 /* ImageBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = D307FF2024DF20A5000017C0 /* ImageBridge.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		D307FF1B24D90798000017C0 /* face-detection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "face-detection-Bridging-Header.h"; sourceTree = "<group>"; };
 		D307FF1C24D90799000017C0 /* Vision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vision.h; sourceTree = "<group>"; };
 		D307FF1D24D90799000017C0 /* Vision.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Vision.mm; sourceTree = "<group>"; };
+		D307FF1F24DF20A5000017C0 /* ImageBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBridge.h; sourceTree = "<group>"; };
+		D307FF2024DF20A5000017C0 /* ImageBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageBridge.mm; sourceTree = "<group>"; };
 		F735FC5B5C602342F84BA25A /* Pods_face_detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_face_detection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +156,8 @@
 				D307FF1C24D90799000017C0 /* Vision.h */,
 				D307FF1D24D90799000017C0 /* Vision.mm */,
 				D307FF1B24D90798000017C0 /* face-detection-Bridging-Header.h */,
+				D307FF1F24DF20A5000017C0 /* ImageBridge.h */,
+				D307FF2024DF20A5000017C0 /* ImageBridge.mm */,
 			);
 			path = "face-detection";
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				D307FEF024D904AD000017C0 /* ViewController.swift in Sources */,
 				D307FEEC24D904AD000017C0 /* AppDelegate.swift in Sources */,
 				D307FEEE24D904AD000017C0 /* SceneDelegate.swift in Sources */,
+				D307FF2124DF20A5000017C0 /* ImageBridge.mm in Sources */,
 				D307FF1E24D90799000017C0 /* Vision.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

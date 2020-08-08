@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.imageView = imageViewSetup()
         self.nextButton = setupNextButton()
-        self.vision = Vision.shared()
+        self.vision = Vision()
     }
     
     func setupNextButton() -> UIButton {
