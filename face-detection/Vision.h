@@ -14,7 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Vision : NSObject
 
--(void) evaluateImage: *UIImage image;
+@property (class, atomic) Vision *instance;
+
++(Vision *) shared;
+
+-(void) evaluateImageWith:(UIImage *)image;
 
 @end
 

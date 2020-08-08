@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Vision
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.imageView = imageViewSetup()
         self.nextButton = setupNextButton()
+        self.vision = Vision.shared()
     }
     
     func setupNextButton() -> UIButton {
@@ -44,7 +46,6 @@ class ViewController: UIViewController {
     }
     
     private func getImage() -> UIImage? {
-        
         return nil
     }
     

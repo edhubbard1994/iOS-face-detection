@@ -7,11 +7,21 @@
 //
 
 #import "Vision.h"
-#import <opencv2/highgui/cap_ios.h>
+#include <opencv2/core.hpp>
+
 
 @implementation Vision
 
--(void) evaluateImage: *UIImage image {
+static Vision *_instance = nil;
+
++(Vision *) shared {
+    if (Vision.instance == nil) {
+        Vision.instance = [[Vision alloc] init];
+    }
+    return Vision.instance;
+}
+
+-(void) evaluateImageWith:(UIImage *)image {
     
 }
 
